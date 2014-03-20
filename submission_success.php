@@ -14,6 +14,8 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
     if($firstname == "" OR $lastname == "" OR $email == "" OR $username = "" OR $password = "")
     {//If name or email doesnt have a value...
         $error_message = "You must specify a value for name, email address and message.";
+        echo $error_message;
+        exit();
     }
 
     if(!isset($error_message))
@@ -24,6 +26,8 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
             if( stripos($value, 'Content-Type:') !== FALSE)//Checks $_POST array 1 element at a time 2 c if it contains malicious values
             {
                 $error_message = "There was a problem with the information you entered";
+                echo $error_message;
+                exit();
             }
         }
     }
@@ -31,6 +35,8 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
     if(!isset($error_message) AND ($_POST["firstname"] !== "" AND $_POST["lastname"] !== "" AND $_POST["email"] !== "" AND $_POST["username"] !== "" AND $_POST["password"] !== ""))
     {
         $error_message = "Your form submission has an error.";
+        echo $error_message;
+        exit();
     }
     echo "Is the following information correct?" . "<br />"; 
     echo "Name: " . $name . "<br />"; 
