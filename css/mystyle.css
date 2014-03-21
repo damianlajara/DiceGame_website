@@ -16,6 +16,7 @@ input {
 	border: 2px solid #80b1ea;
 	border-radius: 25px;
 	padding: 8px 15px;
+	background: #f2f2d1;
 }
 
 #form span {
@@ -23,6 +24,3 @@ input {
 	padding: 8px 15px;
 	background: #80b1ea;
 }
-
-span {
-	float: none;
