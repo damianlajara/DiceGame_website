@@ -22,7 +22,7 @@ echo "Welcome to the Dice Game!\nBefore we start, Please create an account.";
 			
 		</p>
 		<p>
-			<!-- <?php echo "Enter your Email Address"; ?> --><br />
+			<!--<?php echo "Enter your Email Address"; ?>--><br />
 			<input type="text" name="email" size="30" placeholder="Email">
 			<span>Please enter a valid email address</span>
 		</p>
