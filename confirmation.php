@@ -1,4 +1,6 @@
 <?php 
+include(ROOT_PATH . 'inc/header.php');
+
 if ($_SERVER["REQUEST_METHOD"]=="GET")
 {
 	if(isset($_GET["confirm"]) AND $_GET["confirm"] == "yes") 
@@ -19,4 +21,6 @@ else
 {
 	echo "Error in the GET method!";
 }
+
+include(ROOT_PATH . 'inc/footer.php');
 ?>
