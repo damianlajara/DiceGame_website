@@ -1,12 +1,8 @@
 <?php
+include(ROOT_PATH . 'inc/header.php');
+
 if ($_SERVER["REQUEST_METHOD"]=="POST") 
 {
-	/*if($_POST["firstname"] == "" OR $_POST["lastname"] == "" OR $_POST["email"] == "" OR $_POST["username"] == "" OR $_POST["password"] == "")
-    {//If name or email doesnt have a value...
-        $error_message = "You must specify a value for firstname, lastname, email address, username and password.";
-        echo $error_message;
-        exit();
-    }*/
     if($_POST["firstname"] == "") {
     	$error_message = "You must specify a value for firstname";
         echo $error_message;
@@ -33,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
         echo "<br />";
     }
     if(isset($error_message)) { ?>
-    	<a href="index.php" id="my_link">Go back to form</a><!--make it possible to have the data in the form already when you go back!>
+    	<a href="index.php" id="my_link">Go back to form</a> <!--make it possible to have the data in the form already when you go back-->
     <?php 
     	exit();
     }
@@ -106,8 +102,10 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
 			<input type="submit" name="submit" value="submit form">
 		</p>
 	</form>
-	<?php } ?>
-
+	<?php 
+} 
+    include(ROOT_PATH . 'inc/footer.php');
+    ?>
 
 
 
