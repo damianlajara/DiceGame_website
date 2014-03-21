@@ -8,7 +8,7 @@ include(ROOT_PATH . 'inc/header.php'); ?>
 <?php 
 echo "Welcome to the Dice Game!\nBefore we start, Please create an account.";
 	?>
-<div id="form">
+<div class="form">
 	<form method="post" action="submission_success.php">
 		<p>
 			<input id="name" type="text" name="firstname" size="30" placeholder="Name">
@@ -32,7 +32,7 @@ echo "Welcome to the Dice Game!\nBefore we start, Please create an account.";
 			<span>Enter your password</span>
 		</p>
 		<p>
-			<input class="submit "type="submit" name="submit" value="Submit form">
+			<input id="submit" type="submit" name="submit" value="Submit form">
 		</p>
 	</form>
 </div>

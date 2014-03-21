@@ -1,10 +1,15 @@
+/*
+* . is for classes
+* # is for id
+*/
+
 body { 
 	background-color: #ededdf;
 	text-align: left;
 	font-family: 'Chango', cursive;
 }
 
-.submit {
+#submit {
 	width: 140px;
 	height: 40px;
 	background: #80b1ea;
@@ -19,8 +24,21 @@ input {
 	background: #f2f2d1;
 }
 
-#form span {
+.form span {
 	border-radius: 20px;
 	padding: 8px 15px;
 	background: #80b1ea;
+}
+
+a {
+	border-radius: 20px;
+	padding: 4px 5px;
+	background: #80b1ea;
+	text-decoration: none;
+	color: #539def;
+	margin: 0 10px;
+}
+
+a:hover {
+	color: #671818
 }

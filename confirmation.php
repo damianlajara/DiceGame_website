@@ -1,4 +1,5 @@
 <?php 
+require_once("inc/config.php");
 include(ROOT_PATH . 'inc/header.php');
 
 if ($_SERVER["REQUEST_METHOD"]=="GET")
@@ -7,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"]=="GET")
 	{
 		echo "Your account has been succesfully created!\n"; 
 		?>
-		<a href='<?php $ROOT_PATH?>Game.php'>Go to the dice game!</a>
+		<a id="submit" href='<?php $ROOT_PATH?>Game.php'>Go to the dice game!</a>
 		<?php
 	}
 	else if (isset($_GET["confirm"]) AND $_GET["confirm"] = "no") {

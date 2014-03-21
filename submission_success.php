@@ -1,4 +1,5 @@
 <?php
+require_once("inc/config.php");
 include(ROOT_PATH . 'inc/header.php');
 
 if ($_SERVER["REQUEST_METHOD"]=="POST") 
@@ -29,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
         echo "<br />";
     }
     if(isset($error_message)) { ?>
-    	<a href="index.php" id="my_link">Go back to form</a> <!--make it possible to have the data in the form already when you go back-->
+    	<a id="submit" href="index.php" id="my_link">Go back to form</a> <!--make it possible to have the data in the form already when you go back-->
     <?php 
     	exit();
     }
@@ -95,11 +96,11 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
 	echo "Username: " . $username . "<br />"; 
 	echo "Password: " . $password . "<br />"; ?>
 
-	<form id="confirmation" method="get" action="confirmation.php">
+	<form class="form" id="confirmation" method="get" action="confirmation.php">
 		<p>
 			<input type="radio" name="confirm" value="yes">Yes
 			<input type="radio" name="confirm" value="no">No <br />
-			<input type="submit" name="submit" value="submit form">
+			<input id="submit" type="submit" name="submit" value="submit form">
 		</p>
 	</form>
 	<?php 
