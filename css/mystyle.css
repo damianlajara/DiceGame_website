@@ -1,0 +1,26 @@
+body { 
+	background-color: #ededdf;
+	text-align: left;
+	font-family: 'Chango', cursive;
+}
+
+.submit {
+	width: 140px;
+	height: 40px;
+	background: #80b1ea;
+	font-family: 'Chango', cursive;
+	border-radius: 50px;
+}
+
+input {
+	border: 2px solid #80b1ea;
+	border-radius: 25px;
+	padding: 8px 15px;
+	background: #f2f2d1;
+}
+
+#form span {
+	border-radius: 20px;
+	padding: 8px 15px;
+	background: #80b1ea;
+}
