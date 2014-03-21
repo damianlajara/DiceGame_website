@@ -29,16 +29,3 @@ input {
 	padding: 8px 15px;
 	background: #80b1ea;
 }
-
-a {
-	border-radius: 20px;
-	padding: 4px 5px;
-	background: #80b1ea;
-	text-decoration: none;
-	color: #539def;
-	margin: 0 10px;
-}
-
-a:hover {
-	color: #671818
-}
