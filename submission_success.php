@@ -1,8 +1,5 @@
 <?php
-<<<<<<< HEAD
 require_once("inc/config.php");
-=======
->>>>>>> a5daaf4caaece23c5d64a540fca23bec47b0f3ca
 include(ROOT_PATH . 'inc/header.php');
 
 if ($_SERVER["REQUEST_METHOD"]=="POST") 
@@ -33,11 +30,8 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
         echo "<br />";
     }
     if(isset($error_message)) { ?>
-<<<<<<< HEAD
     	<a id="submit" href="index.php" id="my_link">Go back to form</a> <!--make it possible to have the data in the form already when you go back-->
-=======
     	<a href="index.php" id="my_link">Go back to form</a> <!--make it possible to have the data in the form already when you go back-->
->>>>>>> a5daaf4caaece23c5d64a540fca23bec47b0f3ca
     <?php 
     	exit();
     }
