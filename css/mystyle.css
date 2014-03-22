@@ -5,7 +5,6 @@
 
 body { 
 	background-color: #ededdf;
-	text-align: left;
 	font-family: 'Chango', cursive;
 }
 
@@ -24,10 +23,41 @@ input {
 	background: #f2f2d1;
 }
 
+.form {
+	text-align: left;
+}
+
 .form span {
 	border-radius: 20px;
 	padding: 8px 15px;
 	background: #80b1ea;
 }
-/*Hi :D hohohohohohoohoh*/
-/*All of this crap is what i am trying to do on a different branch!*/
+
+.welcome {
+	text-align: center;
+}
+
+.menu {
+	list-style: none;
+	float: right;
+	text-decoration: none;
+}
+
+.menu li {
+	margin: 120px 0 0 0;
+	float: left;
+	margin-right: 20px;
+}
+
+ul.nav li a {
+	text-decoration: none;
+}
+
+ul.nav button {
+	width: 120px;
+	height: 30px;
+	background: #80b1ea;
+	font-family: 'Chango', cursive;
+	border-radius: 50px;
+	border: 2px #80b1ea;
+}
