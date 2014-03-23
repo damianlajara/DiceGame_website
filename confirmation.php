@@ -1,8 +1,6 @@
 <?php 
-<<<<<<< HEAD
+
 require_once("inc/config.php");
-=======
->>>>>>> a5daaf4caaece23c5d64a540fca23bec47b0f3ca
 include(ROOT_PATH . 'inc/header.php');
 
 if ($_SERVER["REQUEST_METHOD"]=="GET")
