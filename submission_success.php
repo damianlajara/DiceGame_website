@@ -30,8 +30,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
         echo "<br />";
     }
     if(isset($error_message)) { ?>
-    	<a id="submit" href="index.php" id="my_link">Go back to form</a> <!--make it possible to have the data in the form already when you go back-->
-    	<a href="signup.php" id="my_link">Go back to form</a> <!--make it possible to have the data in the form already when you go back-->
+    	<button type="button"><a href="signup.php" id="my_link">Go back to form</a></button> <!--make it possible to have the data in the form already when you go back-->
     <?php 
     	exit();
     }

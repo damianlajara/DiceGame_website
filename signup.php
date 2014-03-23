@@ -3,7 +3,7 @@ include(ROOT_PATH . 'inc/header.php'); ?>
 
 <h2>Sign Up</h2>
 <div class="form">
-	<form method="post" action="submission_success.php">
+	<form id="signup_form" method="post" action="submission_success.php">
 		<p>
 			<br /><input id="name" type="text" name="firstname" size="30" placeholder="Name">
 			<span>Enter your first name</span>
