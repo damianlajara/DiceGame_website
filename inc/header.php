@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -6,13 +7,25 @@
 	<!--<link rel="stylesheet" href="css/style.css" type="text/css">-->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700" type="text/css">
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/login.js"></script>
+	<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+   <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/klk.js"></script>
+		
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#login-box").hide();	
+		$( "#login" ).click(function() {
+			$( "#login-box" ).dialog( "open" );
+		});
+		$("#login-box").dialog({
+      	autoOpen: false
+		});
+	});
+</script>
+	
 </head>
-
-<div class="menu">
-	<ul class="nav">
-		<li><button type="button" id="home"><a href="index.php">Home</a></button></li>
-		<li><button type="button" id="login_btn"><a href="">Log In</a></button></li>
-		<li><button type="button" id="signup_btn"><a href="signup.php">Sign Up</a></button></li>
-	</ul>
-</div>
+	
+<body>
+		<button id="login">Login</button>
+</body>
+</html>

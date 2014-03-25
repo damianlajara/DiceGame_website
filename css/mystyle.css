@@ -37,27 +37,20 @@ input {
 	text-align: center;
 }
 
-.menu {
-	list-style: none;
-	float: right;
-	text-decoration: none;
-}
-
-.menu li {
-	margin: 120px 0 0 0;
-	float: left;
-	margin-right: 20px;
-}
-
-ul.nav li a {
-	text-decoration: none;
-}
-
-ul.nav button {
+button {/*ul.nav button*/
 	width: 120px;
 	height: 30px;
 	background: #80b1ea;
 	font-family: 'Chango', cursive;
 	border-radius: 50px;
 	border: 2px #80b1ea;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#login-box {
+	text-align: center;
 }
