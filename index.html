@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".signin").hide();
+  $("#show").click(function(){
+    $(".signin").slideDown();
+  });
+    $(".submit").click(function(){
+    $(".signin").slideUp();
+  });
+});
+</script>
+    
+<script type="text/javascript">
+    function validateForm()
+    {
+        var errmsg = '';
+
+        var username = document.getElementById('username').value;
+
+        if (username == null || username == "")
+        {
+          errmsg += "<br />You must enter a Username Name";
+        }
+
+        var password = document.getElementById('password').value;
+
+        if (password == null || password == "")
+        {
+          errmsg += "<br />You must enter your password";
+
+        }
+        var message = document.getElementById('message');
+
+        message.innerHTML = errmsg;//this is supposed to show
+
+        if (errmsg == '')
+        {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    </script>
+</script>
+</head>
+<body>
+<p>Click here to login!</p>
+<button id="show">Login</button>
+<form method="post" class="signin" action="index1.php">
+    <label class="username">
+    <span>Username</span>
+    <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Username">
+    </label><br />
+    <label class="password">
+    <span>Password</span>
+    <input id="password" name="password" value="" type="password" placeholder="Password">
+    </label><br />
+    <button id="submit" class="submit" onclick="return validateForm();" type="button">Sign in</button>
+    <p>
+    <a class="forgot" href="#">Forgot your password?</a>
+    </p> 
+    <div id="message">
+    </div>
+</form>
+</body>
+</html>
